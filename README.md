@@ -66,7 +66,7 @@ Example Configuration file:  base.yml
 
     forge:
       preprocessor: 'ec2_hostname'
-      base_node_name: 'base'
+      base_node_name: 'base-#{@region}-#{@serial}'
       regions: 
         us-east-1:
           image: 'ami-4dad7424'
